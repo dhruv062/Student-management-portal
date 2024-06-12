@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  @apply mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white;
+}
+
+h2 {
+  @apply mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-5xl dark:text-white;
+}
+
+h6 {
+  @apply mb-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white;
+}
+/* p{
+    @apply mb-4 text-base font-medium leading-7 text-gray-500 md:text-lg dark:text-gray-400
+} */
+input {
+  @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+}
+
+label {
+  @apply block mb-2 text-sm font-medium text-gray-900 dark:text-white;
+}
+
+.sidetiles {
+  @apply bg-white pl-4 py-2;
+}
+
+a {
+  @apply cursor-pointer;
+}
+
+.icon {
+  @apply w-12 h-12 fill-white;
+}
+
+/*  Nav Bar Styling */
+
+.navitem {
+  @apply flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700;
+}
+
+.navitem svg {
+  @apply w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white;
+}
+.navitem.active svg {
+  @apply w-5 h-5 transition duration-75 text-white  dark:group-hover:text-white;
+}
+
+.navitem.active {
+  @apply flex items-center p-2  rounded-lg text-white bg-primary;
+}
+
+/*  Nav Bar Styling ends*/
+
+/* Tabs styling */
+
+.tab{
+    @apply inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300
+}
+.tab.active {
+ @apply inline-block p-4 text-primary bg-gray-100 rounded-t-lg  dark:bg-gray-800 dark:text-blue-500;
+}
+
+/* Main Nav */
+
+.mainnav {
+  @apply w-full md:block md:w-auto
+}
+.mainnav ul{
+  @apply font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700
+}
+.mainnav ul li a{
+  @apply block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent
+}
+.mainnav ul li a.active{
+  @apply block py-2 pl-3 pr-4 text-white bg-primary rounded md:bg-transparent md:text-primary md:p-0 dark:text-white md:dark:text-blue-500
+}
+.navheading{
+  @apply self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white
+}
+
+
